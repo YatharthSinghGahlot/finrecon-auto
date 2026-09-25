@@ -1,0 +1,8 @@
+{
+  "name": "AutoLoan Partner - DSA Ledger & Commission Reconciliation",
+  "description": "Operational loan ledger, commission tracking, and bank payout reconciliation tool for auto loan channel partners and DSAs in India.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
