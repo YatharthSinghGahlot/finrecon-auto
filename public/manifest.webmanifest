@@ -1,0 +1,37 @@
+{
+  "id": "/",
+  "name": "AutoLoan Partner - DSA Ledger & Commission Reconciliation",
+  "short_name": "AutoLoan DSA",
+  "description": "Operational loan ledger, commission tracking, and bank payout reconciliation tool for auto loan channel partners and DSAs in India.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "theme_color": "#0f172a",
+  "background_color": "#0f172a",
+  "icons": [
+    {
+      "src": "/pwa-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-maskable-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "categories": [
+    "finance",
+    "business",
+    "productivity"
+  ]
+}

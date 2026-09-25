@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="50%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#090d16" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#2563eb" />
+      <stop offset="100%" stop-color="#1d4ed8" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#f59e0b" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.45" />
+    </filter>
+  </defs>
+
+  <!-- Base Background -->
+  <rect width="512" height="512" rx="104" fill="url(#bgGrad)" />
+  <rect width="508" height="508" x="2" y="2" rx="102" fill="none" stroke="rgba(255, 255, 255, 0.12)" stroke-width="3" />
+
+  <!-- Inner Badge / Platform -->
+  <g filter="url(#shadow)">
+    <!-- Car silhouette + Speedline arcs -->
+    <path d="M120 340 L392 340" stroke="rgba(255,255,255,0.2)" stroke-width="4" stroke-linecap="round" />
+    
+    <!-- Modern streamlined Car Outline -->
+    <path d="M136 320 
+             C 142 320, 148 316, 154 308 
+             L 174 274 
+             C 186 254, 206 242, 230 240 
+             L 300 240 
+             C 324 240, 346 252, 358 272 
+             L 374 306 
+             C 378 314, 384 320, 394 320 
+             L 400 320 
+             C 406 320, 410 324, 408 330 
+             C 404 340, 394 348, 380 348 
+             L 366 348 
+             C 362 334, 348 324, 332 324 
+             C 316 324, 302 334, 298 348 
+             L 214 348 
+             C 210 334, 196 324, 180 324 
+             C 164 324, 150 334, 146 348 
+             L 126 348 
+             C 114 348, 106 338, 110 328 
+             C 114 322, 124 320, 136 320 Z" 
+          fill="none" 
+          stroke="url(#accentGrad)" 
+          stroke-width="12" 
+          stroke-linecap="round" 
+          stroke-linejoin="round" />
+
+    <!-- Wheels -->
+    <circle cx="180" cy="348" r="22" fill="#0f172a" stroke="url(#accentGrad)" stroke-width="8" />
+    <circle cx="180" cy="348" r="8" fill="#38bdf8" />
+    <circle cx="332" cy="348" r="22" fill="#0f172a" stroke="url(#accentGrad)" stroke-width="8" />
+    <circle cx="332" cy="348" r="8" fill="#38bdf8" />
+
+    <!-- Central Indian Rupee Emblem Badge -->
+    <rect x="186" y="112" width="140" height="140" rx="32" fill="url(#goldGrad)" filter="url(#shadow)" />
+    <text x="256" y="214" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="94" font-weight="900" fill="#0f172a" text-anchor="middle">₹</text>
+
+    <!-- Top speed dots / verified check -->
+    <circle cx="348" cy="128" r="10" fill="#10b981" />
+  </g>
+</svg>

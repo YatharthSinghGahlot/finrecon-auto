@@ -2,6 +2,7 @@ import React from 'react';
 import { PartnerProfile } from '../types';
 import { ThemeMode } from '../utils/theme';
 import { Plus, UserCheck, Download, Sun, Moon, LogOut } from 'lucide-react';
+import { PWAInstallButton } from './PWAInstallButton';
 
 interface TopNavProps {
   activeTab: 'pipeline' | 'reconciliation' | 'banks';
@@ -99,6 +100,9 @@ export const TopNav: React.FC<TopNavProps> = ({
 
           {/* Zone 3: Primary Actions & Utilities */}
           <div className="flex items-center gap-1.5 sm:gap-2">
+            {/* PWA Install Button (auto-shows when installable, hides when running as app) */}
+            <PWAInstallButton />
+
             {/* Theme Toggle (Dark / Light) */}
             <button
               onClick={onToggleTheme}
